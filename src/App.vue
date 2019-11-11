@@ -72,6 +72,7 @@
                 </template>
             </v-list>
         </v-navigation-drawer>
+        
 
         <!--      // toolbar em toda tela-->
         <v-app-bar clipped-left="true" app color="blue darken-3" dark>
