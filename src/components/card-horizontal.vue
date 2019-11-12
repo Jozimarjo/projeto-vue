@@ -2,20 +2,20 @@
 
     <v-container>
 
-        <v-card class="mx-auto teste" v-for="item in pessoa" :key="item.nome" @click="clicks()">
+        <v-card class="teste" v-for="item in pessoa" :key="item.nome" @click="clicks()">
             <!--            <v-container>-->
-            <v-row justify="space-between">
+            <v-row >
                 <v-col cols="auto">
                     <v-img height="auto" width="auto" :src="item.img"></v-img>
                 </v-col>
-                <v-col class="text-center pl-0">
-                    <v-row class="flex-column ma-0 fill-height" justify="center">
-                        <!--                        <v-list-item-title class="headline"> Our Changing Planet</v-list-item-title>-->
-                        <!--                        <v-list-item-subtitle>by Kurt Wagner</v-list-item-subtitle>-->
-                        <v-col class="px-0">
-                            <v-card-title>{{item.nome}}--SMEU PRIMEIRO TESTE</v-card-title>
+                <v-col style="max-width: 65%">
+<!--                    <v-row>-->
+<!--                        <v-col>-->
+                            <v-card-title class="d-inline-block text-truncate"
+                                          style="max-width: 100%;">{{item.nome}}</v-card-title>
                             <v-card-subtitle>por Motorola</v-card-subtitle>
-                        </v-col>
+                            <v-card-text style="color:#B12704;font-size: 15px!important;"> R$ 950</v-card-text>
+<!--                        </v-col>-->
 
                         <!--                        <v-col class="px-0">-->
                         <!--                            <v-list-item-title class="headline"> 2Our Changing Planet</v-list-item-title>-->
@@ -27,7 +27,7 @@
                         <!--                                <v-icon>mdi-share-variant</v-icon>-->
                         <!--                            </v-btn>-->
                         <!--                        </v-col>-->
-                    </v-row>
+<!--                    </v-row>-->
                 </v-col>
             </v-row>
             <!--            </v-container>-->
@@ -117,12 +117,7 @@
             ],
             teste: {},
             pos: '',
-            nome: '',
-            cards: [
-                {title: 'Pre-fab homes', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 12},
-                {title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6},
-                {title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6},
-            ],
+            nome: ''
         }),
         methods: {
             clicks() {
