@@ -12,7 +12,7 @@
             <v-container>
                 <h1>Motorola</h1>
                 <v-card>
-                    <v-img class="white--text align-end" height="375px"
+                    <v-img class="white--text align-end"  contain
                            src="https://images-na.ssl-images-amazon.com/images/G/32/br-marketing-coop/Setembro/Motorola/Banner_Amazon_1500x375_BrandPage_Desk._CB436436140_.png">
                         <v-card-title>Top 10 Celulares motorolas</v-card-title>
                     </v-img>
@@ -23,7 +23,7 @@
             <CardHorizontal v-if="!btn"/>
         </v-content>
         <!--      // cortana ficar por baixo-->
-        <v-navigation-drawer disable-resize-watcher="true" v-model="drawer" clipped="true" app>
+        <v-navigation-drawer disable-resize-watcher v-model="drawer" clipped app>
             <v-list dense>
                 <template v-for="item in items">
                     <v-row v-if="item.heading" :key="item.heading" align="center">
@@ -72,13 +72,13 @@
                 </template>
             </v-list>
         </v-navigation-drawer>
-        
+
 
         <!--      // toolbar em toda tela-->
-        <v-app-bar clipped-left="true" app color="blue darken-3" dark>
+        <v-app-bar clipped-left app color="blue darken-3" dark>
             <v-toolbar-title style="width: 300px" class="ml-0 pl-4">
                 <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
-                <span >CollorMaq Etiquetas</span>
+                <span >Nome app</span>
             </v-toolbar-title>
             <v-text-field flat solo-inverted hide-details prepend-inner-icon="mdi-magnify" label="Search"
                           class="hidden-sm-and-down"/>
