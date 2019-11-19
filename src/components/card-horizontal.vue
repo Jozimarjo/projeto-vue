@@ -21,17 +21,16 @@
                         <v-card-subtitle style="padding: 0px" v-if="item.show">por Motorola</v-card-subtitle>
 
                         <v-card-text v-if="!item.show"
-                                     style="color:#222;font-size: 16px!important;font-weight: bold; width: auto;padding:3px;">
-                            R$
-                            950,79
+                                     style="color:#222;font-size: 13px!important;font-weight: bold; width: auto;padding:3px;">
+                            R$ 950,79
                         </v-card-text>
-                        <v-card-text v-if="!item.show"
-                                     style="color:#1a0dab;font-size: 16px!important; width: auto; padding:3px;">
-                            CollorMaq Manaus
-                        </v-card-text>
+                        <!--<v-card-text v-if="!item.show"-->
+                        <!--style="color:#1a0dab;font-size: 13px!important; width: auto; padding:3px;">-->
+                        <!--CollorMaq Manaus-->
+                        <!--</v-card-text>-->
 
                         <v-card-text v-if="!item.show"
-                                     style="padding-bottom:0;color:#129918;font-size: 15px!important; width: auto;padding:3px;">
+                                     style="padding-bottom:0;color:#129918;font-size: 13px!important; width: auto;padding:3px;">
                             93%
                             positivos (246)
                         </v-card-text>

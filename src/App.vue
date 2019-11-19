@@ -20,7 +20,8 @@
                 </v-card>
             </v-container>
             <HelloWorld v-if="btn"/>
-            <CardHorizontal v-if="!btn"/>
+            <CardHorizontal v-if="btn"/>
+            <CardProduto v-if="!btn"/>
         </v-content>
         <!--      // cortana ficar por baixo-->
         <v-navigation-drawer disable-resize-watcher v-model="drawer" clipped app>
@@ -153,13 +154,15 @@
     /* eslint-disable */
     import HelloWorld from './components/HelloWorld';
     import CardHorizontal from './components/card-horizontal'
+    import CardProduto from './components/card-produto'
     //
     export default {
         name: 'App',
 
         components: {
             HelloWorld,
-            CardHorizontal
+            CardHorizontal,
+            CardProduto
         },
 
         data: () => ({
